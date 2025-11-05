@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:football_news/newslist_form.dart';
+import 'package:football_news/widgets/left_drawer.dart';
 
 class MyHomePage extends StatelessWidget {
   MyHomePage({super.key});
@@ -31,6 +33,7 @@ class MyHomePage extends StatelessWidget {
         backgroundColor: Theme.of(context).colorScheme.primary,
       ),
       // Body halaman dengan padding di sekelilingnya.
+      drawer: LeftDrawer(),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         // Menyusun widget secara vertikal dalam sebuah kolom.
@@ -157,6 +160,17 @@ class ItemCard extends StatelessWidget {
             ..showSnackBar(
               SnackBar(content: Text("Kamu telah menekan tombol ${item.name}!"))
             );
+          
+          // Navigate ke route yang sesuai (tergantung jenis tombol)
+          if (item.name == "Add News") {
+            // TODO: Gunakan Navigator.push untuk melakukan navigasi ke MaterialPageRoute yang mencakup NewsFormPage.
+            print("Here");
+            Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => NewsFormPage(),
+                  ));
+          }
         },
         // Container untuk menyimpan Icon dan Text
         child: Container(
