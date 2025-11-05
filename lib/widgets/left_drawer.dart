@@ -39,7 +39,7 @@ class LeftDrawer extends StatelessWidget {
               ],
             ),
           ),
-          // TODO: Bagian routing
+          // TODO: Bagian routing (selesai)
           ListTile(
             leading: const Icon(Icons.home_outlined),
             title: const Text('Home'),
@@ -58,7 +58,7 @@ class LeftDrawer extends StatelessWidget {
             // Bagian redirection ke NewsFormPage
             onTap: () {
               /*
-              TODO: Buatlah routing ke NewsFormPage di sini,
+              TODO: Buatlah routing ke NewsFormPage di sini, (selesai)
               setelah halaman NewsFormPage sudah dibuat.
               */
               Navigator.pushReplacement(

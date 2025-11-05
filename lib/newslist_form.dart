@@ -39,7 +39,7 @@ class _NewsFormPageState extends State<NewsFormPage> {
           backgroundColor: Colors.indigo,
           foregroundColor: Colors.white,
         ),
-        // TODO: Tambahkan drawer yang sudah dibuat di sini
+        // TODO: Tambahkan drawer yang sudah dibuat di sini (selesai)
         drawer: LeftDrawer(),
         body: Form(
           key: _formKey,

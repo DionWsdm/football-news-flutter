@@ -11,9 +11,9 @@ class MyHomePage extends StatelessWidget {
     ItemHomepage("Logout", Icons.logout),
   ];
 
-  final String nama = "Lionel Messi"; //nama
-  final String npm = "2406275678"; //npm
-  final String kelas = "B"; //kelas
+  final String nama = "Dion Wisdom Pasaribu"; //nama
+  final String npm = "2406414536"; //npm
+  final String kelas = "F"; //kelas
 
   @override
   Widget build(BuildContext context) {
@@ -22,12 +22,13 @@ class MyHomePage extends StatelessWidget {
       // AppBar adalah bagian atas halaman yang menampilkan judul.
       appBar: AppBar(
         // Judul aplikasi "Football News" dengan teks putih dan tebal.
-        title: const Text(
-          'Football News',
+        title: const Center(
+          child: const Text('Football News',
           style: TextStyle(
             color: Colors.white,
             fontWeight: FontWeight.bold,
           ),
+        )
         ),
         // Warna latar belakang AppBar diambil dari skema warna tema aplikasi.
         backgroundColor: Theme.of(context).colorScheme.primary,
@@ -165,7 +166,7 @@ class ItemCard extends StatelessWidget {
           if (item.name == "Add News") {
             // TODO: Gunakan Navigator.push untuk melakukan navigasi ke MaterialPageRoute yang mencakup NewsFormPage.
             print("Here");
-            Navigator.pushReplacement(
+            Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (context) => NewsFormPage(),
